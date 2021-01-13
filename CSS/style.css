@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+img{
+    width:100%;
+    height:auto;
+}
+#introduction-area{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+#introduction-area p{
+    text-align:center;
+}
+#introduction-area button{
+    padding:10px 15px;
+    margin:10px;
+}
+@media screen and (max-width:700px){
+    .container {
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    #introduction-area{
+        margin-top:2em;
+    
+    }
+}
