@@ -12,24 +12,35 @@
 }
 img{
     width:100%;
-    height:100vh;;
+    height:100vh;
 }
 
+
 .main-area{
-    /* display:flex;
+    display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content: center; */
-    background-color:#E0A890;
+    justify-content: center;
+    background-color:rgb(91, 39, 11,.8);
+   
     
     
+}
+#img-area{
+    background:url("/Images/basket-of-yarn.jfif");
+    background-color:red;
+    background-size:cover;
+    background-position: center;
+    background-color:034748;
+    height:100vh;
 }
 #introduction-area{
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content: center;
-    margin-top:5em;
+    
+    color:rgb(255, 255, 255,.6);
 
 }
 #call-to-action{
@@ -44,7 +55,9 @@ img{
 }
 #introduction-area p{
     text-align:center;
+    padding:0 50px;
     line-height:2;
+    font-size:20px;
     
 }
 span{
@@ -54,16 +67,20 @@ span{
 button{
     padding:10px 15px;
     margin:10px;
-    background-color:#065143;
-    outline:none;
+    background-color:black;
+    color:white;
+    outline:1px solid grey;
     border:none;
     appearance: none;
     transition:all 0.5s ease;
     opacity:1
 }
 button:hover {
-    background-color:#70B77E;
+    background:linear-gradient(120deg,transparent,#deb887);
+    color:black;
     opacity:.7;
+    font-size:15px;
+    
 }
 input{
     padding:10px 20px;

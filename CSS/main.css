@@ -1,15 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 
 }
+
 body {
     background-color:#526760;
+}
+#nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    
+}
+.fa-arrow-left{
+    font-size:2em;
+    color:white;
+}
+.fa-search{
+    color:white;
 }
 .intro{
     text-align:center;
     margin-bottom:1.5em;
+}
+.intro h1{
+    font-size:10em;
+    color:white;
+    font-family: 'Montserrat', sans-serif;;
 }
 .intro p{
     text-align:center;
@@ -17,40 +40,96 @@ body {
    
 }
 .products-area{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(600px, 1fr));
-    grid-gap:2em;
-
+    margin:0 30px;
 }
-.info-area{
+.card{
     background-color:beige;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content: center;
+    
+   
 }
+/* .info-area{
+    background-color:beige;
+    
+   
+   
+} */
 .info-area p{
     text-align:center;
 }
 .info-area button {
     padding:10px 15px;
-    margin:10px 0; 
-    background-color:#E0A890;
-    border-radius:5px;
+    margin:10px;
+    background-color:#065143;
     outline:none;
     border:none;
     appearance: none;
     
 }
-
+.sales-area{
+   
+    background-color:rgb(6, 81, 67,0.25);
+}
+.sales-area .sales-pitch{
+   font-size:12em;
+   color:#001021;
+   font-family:'Abel', sans-serif;
+    
+}
+.sales-area .sales-image{
+    width:900px;
+    height:600px;
+    
+}
+.sales-area img{
+    height:100%;
+    width:100%;
+}
 .ratings{
     display:flex;
     margin:10px 0;
 }
+.more-info{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:20em;
+}
 
 
 img{
-    width:50%;
-    height:auto;
-    
+    width:400px;
+    height:400px;
+    max-width:100%;
+    padding:15px 10px;
 }
+@media (max-width:900px){
+    .sales-area{
+        position:relative;
+    }
+   .sales-area::before{
+       content:'';
+       position:absolute;
+       top:0px;
+       right:0px;
+       bottom:0px;
+       left:0px;
+       background-image:url("/Images/pexels-photo-3746214.jpeg");
+       background-size:cover;
+       background-position:top center;
+   }
+   .sales-pitch{
+       position:relative;
+       text-align:center;
+       
+   }
+   .sales-pitch p{
+       color:white;
+   }
+
+
+}
+
